@@ -1,0 +1,15 @@
+#VRML V2.0 utf8
+Group { # open a group to include elements
+           children [ # include a first element, a group of ‘children’
+           DEF box Transform { # define what kind of object
+           translation 0 0 0 # define the coordinates of it : x y z
+           Shape { # define the properties of this object
+           appearance Appearance { # Define appearance
+           material Material { diffuseColor 0  1  0 } # Colour*
+           } # Close the appearance def.
+           geometry Box { } # specify the type of object (box)
+           } # Closing the properties of the included object
+           ] # Closing the second group of children
+           } # Closing the box properties
+           ] # Closing the first group of children
+} # Closing the group
